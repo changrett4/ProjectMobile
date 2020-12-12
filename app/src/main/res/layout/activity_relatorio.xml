@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelatorioActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_menulat"
+        app:title="IFeed"
+        app:titleMarginStart="125dp"
+        app:titleTextColor="@color/colorAccent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_users"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

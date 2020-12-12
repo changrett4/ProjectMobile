@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/basic"
+            android:text="nome de usuário"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectphoto_button_register" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/login_edittext_bg"
+            android:ems="10"
+            android:hint="Ex: Lucas_Bastos"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+
+            android:textColor="@color/colorAccentDark"
+            android:textCursorDrawable="@color/colorAccentDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectphoto_button_register"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/basic"
+            android:text="Matrícula"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+
+        <EditText
+            android:id="@+id/edit_mat"
+            android:layout_width="213dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_edittext_bg"
+            android:ems="10"
+            android:hint="Ex: 2018377777"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:textCursorDrawable="@color/colorAccentDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/login_button_bg"
+            android:text="atualizar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+        <Button
+            android:id="@+id/selectphoto_button_register"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_select_photo_button"
+            android:text="Selecione a foto"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/basic"
+            android:text="E-mail"
+            android:textColor="@color/colorAccentDark"
+
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_mat" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="213dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/login_edittext_bg"
+            android:hint="Ex:teste@email.com"
+            android:textCursorDrawable="@color/colorAccentDark"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textWebEmailAddress"
+            android:paddingLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/selectphoto_imageview_user"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="40dp"
+            app:civ_border_width="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

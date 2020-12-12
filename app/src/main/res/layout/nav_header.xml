@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:background="#008037"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_perf_lat"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/txt_username_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
+        android:text="Jhonathan Abreu"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_email_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
+        android:text="2018324361@gmail.com"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+</LinearLayout>

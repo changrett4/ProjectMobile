@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <Preference
+        android:key="key_delete"
+        android:summary="Clique para deletar sua conta"
+        android:title="Deletar Conta" />
+    <Preference
+        android:key="key_logout"
+        android:title="Logout"
+        android:summary="Desconectar sua conta"/>
+</PreferenceScreen>

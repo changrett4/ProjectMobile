@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">IFeed</string>
+    <string name="account_name">ACCOUNT NAME</string>
+    <string name="password">SENHA</string>
+    <string name="password_hint">********</string>
+    <string name="forgot_your_login_info">Esqueceu sua senha?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="remember_my_password">Lembrar minha senha</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="username">SEU NOME</string>
+    <string name="matricula">SUA MATRÍCULA</string>
+    <string name="matricula_hint">INSIRA SUA MATRÍCULA</string>
+    <string name="confirm_password">CONFIRME SUA SENHA</string>
+    <string name="email">E-MAIL</string>
+    <string name="email_inst">example@email.com</string>
+    <string name="pass_inst">12345678</string>
+    <string name="your_email">INSERT YOUR EMAIL</string>
+    <string name="submit">SUBMIT</string>
+    <string name="title_activity_func_main">FuncMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_eat_details">EatDetails</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <!-- Menu Lateral -->
+    <string name="open_drawer">Abriu</string>
+    <string name="close_drawer">Fechou</string>
+    <string name="ifeed">Cardápio</string>
+</resources>

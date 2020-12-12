@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="Definições">
+
+        <SwitchPreference
+            android:key="switch"
+            android:title="Receber Notificações"
+            android:summary="Clique para receber as notificações"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Bom dia">
+
+        <Preference
+            android:key="sample_key"
+            android:title="Logout"
+            android:summary="Desconectar sua conta"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

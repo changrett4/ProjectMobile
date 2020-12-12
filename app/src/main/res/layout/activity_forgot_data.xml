@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ForgotDataActivity"
+    >
+
+        <TextView
+            android:id="@+id/txt_reposenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/basic"
+            android:text="Recuperação de senha"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.559"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_email_repo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/basic"
+
+            android:text="@string/email"
+            android:textColor="@color/colorAccentDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_reposenha" />
+
+        <EditText
+            android:textCursorDrawable="@color/colorAccentDark"
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:background="@drawable/login_edittext_bg"
+            android:fontFamily="@font/basic"
+            android:hint="@string/email_inst"
+            android:inputType="textWebEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccentDark"
+            android:textColorHint="#CCC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email_repo" />
+
+        <Button
+            android:id="@+id/btn_submit_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_button_bg"
+            android:fontFamily="@font/basic"
+            android:text="@string/submit"
+
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
